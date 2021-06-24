@@ -1,0 +1,144 @@
+*{
+    margin:0;
+    padding: 0;
+}
+body{
+    background-color: aquamarine;
+}
+.box1{
+    width:100%;
+    background-color: rgba(238, 238, 238,0.8);
+    /* background-size: 50vw; */
+    /* background-repeat: no-repeat; */
+    height: 30vw;
+    padding:0;
+    /* float:right; */
+}
+.box1in{
+    /* width:100%; */
+    /* height: 28vw;
+    border: 10px solid black; */
+    text-align: center;
+}
+/* .box1 h1{
+    width:200px;
+    margin: 0;
+    margin-top: 10px; */
+    /* position: absolute;
+    top: 50px;
+    left: 50%; */
+    /* font-size: 100px;
+    text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white;
+    font-family: sans-serif; */
+    /* z-index:+1; */
+    /* float:left;
+} */
+/* .box1 h2{
+    width:400px;
+    margin: 0; */
+    /* position: absolute;
+    top:100px;
+    left:28%; */
+    /* font-size: 50px;
+    font-family: sans-serif;
+    display: inline-block;
+    float:left;
+} */
+
+.rotatesale {
+    /* Safari */
+    -webkit-transform: rotate(40deg);
+    
+    /* Firefox */
+    -moz-transform: rotate(40deg);
+    
+    /* IE */
+    -ms-transform: rotate(40deg);
+    
+    /* Opera */
+    -o-transform: rotate(40deg);
+    
+
+}
+
+#potato{
+    display: inline-block;
+}
+#potato h1, #potato h2{
+    margin-top: 10vw;
+    float:left;
+}
+
+#potato h1{
+    font-size: 10vw;
+    font-family: sans-serif;
+    text-shadow: -2px 0 rgb(231, 83, 83), 0 2px white, 2px 0 orange, 0 -2px white;
+}
+
+#potato h2{
+    font-size: 9vw;
+    font-family: navtext;
+}
+
+.box2{
+    height: 5vw;
+    background-color: green;
+    font-family: navtext;
+    font-weight: bolder;
+    font-size: 4vw;
+    color: white;
+    text-align: center;
+}
+
+#para{
+    font-family: navtext;
+    font-size: 5vw;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+    text-align: center;
+}
+
+.box3{
+    height: auto;
+    text-align: center;
+}
+
+#box3in img{
+    height:50vw;
+}
+@media screen and (min-width: 850px) {
+    .box1{
+        height: 15vw;
+    }
+    #potato h1, #potato h2{
+        margin-top: 5vw;
+    }
+    #potato h1{
+        font-size: 5vw;
+    }
+    
+    #potato h2{
+        font-size: 4vw;
+    }
+
+    .box2{
+        height: 3vw;
+        font-size: 2.5vw;
+    }
+
+    #para{
+        font-size: 2.5vw;
+    }
+    #box3in{
+        display: inline-block;
+    }
+
+    #box3in img{
+        height:25vw;
+    }
+}
+
+@font-face{
+    font-family:navtext;
+    src: url('../fonts/mesmerize-ul.ttf')
+}

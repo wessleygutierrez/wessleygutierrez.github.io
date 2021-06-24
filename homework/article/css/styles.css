@@ -1,0 +1,30 @@
+body{
+	font-family: cursive;
+}
+
+#specific{
+	font-family: SnowtopCaps;
+	font-size: 30;
+	color: red;
+}
+
+.blockhead{
+	font-weight: 800;
+	font-family: sans-serif;
+	color: blue;
+}
+
+@font-face{
+	font-family: SnowtopCaps;
+	src: url(../fonts/orange-juice-2.0.otf);
+}
+
+.copyright{
+	font-size: 25;
+	font-weight: 800;
+}
+
+#bold{
+	font-family: monospace;
+	color: green;
+}

@@ -1,0 +1,87 @@
+.box{
+    width:302px;
+    height: 302px;
+    margin: 0 auto;
+        -webkit-touch-callout: none; /* iOS Safari */
+          -webkit-user-select: none; /* Safari */
+           -khtml-user-select: none; /* Konqueror HTML */
+             -moz-user-select: none; /* Firefox */
+              -ms-user-select: none; /* Internet Explorer/Edge */
+                  user-select: none; /* Non-prefixed version, currently
+                                        supported by Chrome and Opera */
+}
+#row1{
+    width: 302px;
+    height: 100px;
+}
+#row2{
+    width: 302px;
+    height: 100px;
+}
+#row3{
+    width: 302px;
+    height: 100px;
+}
+#spot1{
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    width: 100px;
+    height:100px;
+    float:left;
+}
+#spot2{
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    width: 100px;
+    height:100px;
+    float:left;
+}
+#spot3{
+    border-bottom: 1px solid black;
+    width: 100px;
+    height:100px;
+    float:left;
+}
+#spot4{
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    width: 100px;
+    height:100px;
+    float:left;
+}
+#spot5{
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    width: 100px;
+    height:100px;
+    float:left;
+}
+#spot6{
+    border-bottom: 1px solid black;
+    width: 100px;
+    height:100px;
+    float:left;
+}
+#spot7{
+    border-right: 1px solid black;
+    width: 100px;
+    height:100px;
+    float:left;
+}
+#spot8{
+    border-right: 1px solid black;
+    width: 100px;
+    height:100px;
+    float:left;
+}
+#spot9{
+    width: 100px;
+    height:100px;
+    float:left;
+}
+#winner{
+    text-align: center;
+}
+h1{
+    text-align: center;
+}

@@ -1,0 +1,68 @@
+<html>
+	<head>
+		<title>Job Application</title>
+		<link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <div class="top">
+            <h1>English Professor Application</h1>
+            <h2>Description:</h2>
+            <p>You will carry out the duties of a professor who teaches English. There are several responsibilities as an English Professor.</p>
+        </div>
+        <form id="myForm" method="get" action="#">
+            <div class="row">
+                <label for="inputTxt">Name:</label>
+                <!--input text-->
+                <input id="inputTxt" name="inputTxt" type="text" placeholder="Your name" required/>
+            </div>
+            <div class="row">
+                <label for="slctDrop">Highest degree earned?</label>
+                <!--option box-->
+                <select id="slctDrop" name="slctDrop">
+                    <option>-Select-</option>
+                        <option value="1">High School</option>
+                        <option value="2">Associate</option>
+                        <option value="3">Bachelors</option>
+                        <option value="4">Masters</option>
+                </select>
+            </div>
+            <div class="row">
+                <label>How many languages can you speak?</label>
+                <!--input radio-->
+                <div class="cala">
+                    <label class="lblChk" for="radioOne">One</label>
+                    <input id="radioOne" name="radio" type="radio" value="1">
+                    <label class="lblChk" for="radioTwo">Two</label>
+                    <input id="radioTwo" name="radio" type="radio" value="2">
+                    <label class="lblChk" for="radioThree">Three or more</label>
+                    <input id="radioThree" name="radio" type="radio" value="3">
+                </div>
+            </div>
+            <div class="row">
+                <label>Do you speak any of the following languages?</label>
+                <!--input checkbox-->
+                <div class="cala">
+                    <label class="lblChk" for="chkOne">French</label>
+                    <input id="chkOne" name="chkOne" type="checkbox" value="1">
+                    <label class="lblChk" for="chkTwo">Spanish</label>
+                    <input id="chkTwo" name="chkTwo" type="checkbox" value="2">
+                    <label class="lblChk" for="chkThree">Polish</label>
+                    <input id="chkThree" name="chkThree" type="checkbox" value="3">
+                </div>
+            </div>
+            <div class="row">
+                <label for="txtArea2">Why do you want a position as an English professor?</label><br>
+                <!--textarea-->
+                <textarea id="txtArea2" name="txtArea"></textarea>
+            </div>
+            <div class="row">
+                <label for="inputFile">Upload Resume:</label>
+                <!--input file-->
+                <input id="inputFile" name="inputFile" type="file" required/>
+            </div>
+            <div class="row">
+                <input id="inputSubmit" class="btn" type="submit" value="Submit Application"/>
+            </div>
+        </form>
+    </body>
+</html>

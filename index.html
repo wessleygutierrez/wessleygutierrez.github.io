@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Home | Wessley</title>
+		<link rel="stylesheet" href="css/styles.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="scripts/scroll.js"></script>
+	</head>
+	
+	<body>
+		<div id="mobilehead"><h1 class="within">WESSLEY'S<br>PORTFOLIO</h1></div>
+		<div class="whitespace"></div>
+		<nav id="topnav">
+			<h1 class="within">WESSLEY'S<br>PORTFOLIO</h1>
+
+			<ul class="within">
+				<li onmouseover="underlineEx(this)" onmouseout="underline(this)" ><a href="#class">CLASS</a><div class="bar1"></div></li>
+				<li onmouseover="underlineEx(this)" onmouseout="underline(this)" ><a href="#contact">CONTACT</a><div class="bar1"></div></li>
+				<li onmouseover="underlineEx(this)" onmouseout="underline(this)" ><a href="#work">WORK</a><div class="bar1"></div></li>
+				<li onmouseover="underlineEx(this)" onmouseout="underline(this)" ><a href="#about">ABOUT</a><div class="bar1"></div></li>
+				<li onmouseover="underlineEx(this)" onmouseout="underline(this)" ><a href="#homer">HOME</a><div class="bar1"></div></li>
+			</ul>
+		</nav>
+		<div id="homer" class="home within content">
+			<div class="boxlefthome">
+				<h1>Welcome, my name is Wessley Gutierrez.</h1>
+				<h1>Developer.</h1>
+				<p>I'm a college student.</p>
+				<div id="download"><a href="resume.pdf" download="Resume">Download Resume</a></div>
+			</div>
+			<div id="fill"></div>
+			<div class="boxrighthome">
+				<div class="imgcontainer">
+						<span class="helper"></span><img src="images/photo1.png" alt="Wessley">
+				</div>
+			</div>
+			<div id="fill"></div>
+		</div>
+		<div id="about">
+			<div class="within content">
+				<h1>About Me</h1>
+				<p>I'm a Computer Science major that loves to tinker with any technology I can get my hands on.
+					On top of what I already know, I have been accumulating the knowledge bestowed upon me by many professors in
+					my college. Some things I've learned from my college are Java, HTML, CSS, and JS.
+				</p>
+				<h1>Goals</h1>
+				<p>
+					My goals are to earn my BS in Computer Science, further understand the variety of techniques when it
+					comes to modern-day development and apply my gathered experience on the field.
+				</p>
+			</div>
+		</div>
+		<div id="work">
+			<div class="within content">
+				<h1>Work Experience</h1>
+				<p>I've worked at a college as a Student Ambassador and assisted students with
+					course registration and  I've also performed actions that would normally require 
+					an IT while I worked there. If you would like to find out more about my 
+					experience then please feel free to download my resume in the home section.
+				</p>
+				<h1>Work Sample</h1>
+				<h2>Custom T-shirt Store</h2>
+				<a href="http://homepages.neiu.edu/~wgutierr/simplestore"><img src="images/work.png"></a>
+			</div>
+		</div>
+		<div id="contact">
+			<div class="within content">
+				<h1>Contact</h1>
+				<h2>Email:</h2>
+				<a href="mailto:wgutierr@neiu.edu">wgutierr@neiu.edu</a>
+			</div>
+		</div>
+		<div id="class">
+			<div class="within content">
+				<h1>Class Assignments</h1>
+				<a href="http://homepages.neiu.edu/~wgutierr/homework/article">Article</a><br>
+				<a href="http://homepages.neiu.edu/~wgutierr/homework/artist">Artist</a><br>
+				<a href="http://homepages.neiu.edu/~wgutierr/homework/jobapp">Job Application</a><br>
+				<a href="http://homepages.neiu.edu/~wgutierr/homework/penguins">Penguins</a><br>
+				<a href="http://homepages.neiu.edu/~wgutierr/homework/recipe">Recipe</a><br>
+				<a href="http://homepages.neiu.edu/~wgutierr/homework/resume">Resume</a><br>
+				<a href="http://homepages.neiu.edu/~wgutierr/homework/sale">Sale</a><br>
+				<a href="http://homepages.neiu.edu/~wgutierr/homework/tables">Tables</a><br>
+				<a href="http://homepages.neiu.edu/~wgutierr/homework/thankyou">Card</a><br>
+				<a href="http://homepages.neiu.edu/~wgutierr/homework/tictactoe">Tic-Tac-Toe</a><br>
+				<a href="http://homepages.neiu.edu/~wgutierr/simplestore">SimpleStore Project</a><br>
+				<a href="http://homepages.neiu.edu/~wgutierr">Homepage Project</a>
+			</div>
+		</div>
+		<footer class="foot">
+			<div class="copyright within">
+				<div class="footleft">
+					<p>Copyright @2018 by Wessley Gutierrez</p>
+				</div>
+				<div class="footright">
+					<!-- <ul class="social">
+						<li><a href="#"><img src="images/iconmonstr-facebook-1.svg" alt="facebook"></a></li>
+						<li><a href="#"><img src="images/iconmonstr-twitter-1.svg" alt="facebook"></a></li>
+						<li><a href="#"><img src="images/iconmonstr-linkedin-1.svg" alt="facebook"></a></li>
+					</ul> -->
+				</div>
+			</div>
+		</footer>
+		<div id="buttonNav">
+				<span></span>
+				<span></span>
+				<span></span>
+		</div>
+		<div id="menu" style="display:none;" class="mobileCheck">
+			<ul>
+				<li><a href="#mobilehead">HOME</a></li>
+				<li><a href="#about">ABOUT</a></li>
+				<li><a href="#work">WORK</a></li>
+				<li><a href="#contact">CONTACT</a></li>
+				<li><a href="#class">CLASS</a></li>
+			</ul>
+		</div>
+		<script>document.body.className += ' fade-out';</script>
+		<script src="scripts/nav.js"></script>
+		<script>
+			/* if ($(window).width() > 800) {
+				$('#topnav').show();
+				$('.mobile-nav').hide();
+			}
+			else {
+				$('#topnav').hide();
+				$('.mobile-nav').show();
+			} */
+		</script>
+	</body>
+</html>
