@@ -1,0 +1,86 @@
+<html>
+    <head>
+        <title>Wopson and Co.</title>
+        <link rel="stylesheet" href="css/styles.css">
+        <script src="js/clock.js"></script>
+        <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <div class="CartCorner"><a href="cart.html">Cart</a><img src="images/cart.png" height="20" width="20"></div>
+        <h1 class="head">WOPSON & CO.</h1>
+        <nav id="nav">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="tshirt.html">T-SHIRT MAKER</a></li>
+                <li><a href="about.html" style="font-weight: normal">ABOUT</a></li>
+            </ul>
+        </nav>
+        <div class="missionbox">
+            <h2 class="mission">Mission Statement</h2>
+            <div class="mission"><p>Wopson &amp; Co. is a custom clothing company that was inspired by the many<br>
+                    designs that people made with their creative imaginations and to bring them to life<br>
+                    by allowing everyone to place these designs onto our t-shirts. We are willing to bring the<br>
+                    highest quality clothing for everyone, while also embedding any design desired onto these t-shirts.
+            </p>
+            </div>
+        </div>
+        <div class="ContactForm">
+            <div id="contacthead">
+                <h1 id="chead">Contact Us!<span>&darr;</span></h1>
+            </div>
+            <form id="contactform" method="get" action="#">
+                <div class="row">
+                    <label for="firstName">First Name:</label>
+                    <!--input text-->
+                    <input id="firstName" name="inputTxt" type="text"/>
+                </div>
+                <div class="row">
+                    <label for="lastName">Last Name:</label>
+                    <!--input text-->
+                    <input id="lastName" name="inputTxt" type="text"/>
+                </div>
+                <div class="row">
+                    <label for="inputEmail">Email:</label>
+                    <!--input email-->
+                    <input id="inputEmail" name="inputEmail" type="email"/>
+                </div>
+                <div class="row">
+                        <label id="message" for="txtArea1">Message:</label>
+                        <!--textarea-->
+                        <textarea id="txtArea1" name="txtArea" placeholder="Enter your message here" rows="10" cols="50"></textarea>
+                </div>
+                <div class="row">
+                    <input id="contactsubmit" class="btn" type="submit" value="Submit"/>
+                </div>
+            </form>
+        </div>
+        <footer id="foot">
+                <h3 class="h3foot">Links</h3>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="tshirt.html">T-SHIRT MAKER</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                </ul>
+                <div id="copy">Copyright &copy; 2018, <a href="#" onclick="window.location.reload(true);">Wopson &amp; Co.</a></div>
+                <p id="clockstop"></p>
+        </footer>
+        <script>
+            $('#contactform').slideUp(0);
+            $('#chead').click(function(){
+                //toggle the accordionSection
+                $('#contactform').slideToggle(250);
+                function decodeHtml(html) {
+                    var txt = document.createElement("textarea");
+                    txt.innerHTML = html;
+                    return txt.value;
+                }
+                //change the +/-
+                var span = $(this).find('span');
+                if($(span).text() == decodeHtml('&darr;'))
+                    $(span).text(decodeHtml('&uarr;'));
+                else
+                    $(span).text(decodeHtml('&darr;'));
+	        });
+        </script>
+    </body>
+</html>
